@@ -84,7 +84,6 @@ header
     background-color: #f1d6ab;
     width: 100%;
     height: 25px;
-    padding: 5px;
 }
 .menu__container
 {
@@ -111,6 +110,7 @@ header
     font-size: 25px;
     position: fixed;
     background-color: rgba(241, 214, 168, .5);
+
 }
 .menu__ul li
 {
@@ -142,7 +142,7 @@ header
     bottom: 0;
     left: 0;
     background-color: #f1d6ab;
-    width: 100vw;
+    width: 100vh;
     height: 100vh;
     /* display: flex; */
     flex-direction: column;
@@ -180,9 +180,8 @@ header
 .hero
 {
     background-color: #f1d6ab;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    padding: 5px;
 }
 .hero__container--image
 {
@@ -218,6 +217,7 @@ header
 }
 .hero__description p + p
 {
+    font-size: 20px;
     margin-top: 40px;
 }
 
@@ -248,12 +248,14 @@ header
 {
     width: 100%;
     height: auto;
+    display: grid;
+    justify-content: center;
 }
 .portfolio__article
-{
+{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
     width: 90%;
     height: 420px;
-    margin: 2%;
+    margin: 5px;
     padding: 10px;
     justify-content: center;
     border: 1px solid #2b2b28;
@@ -290,4 +292,59 @@ header
 .description__portfolio-descri
 {
     font-size: 14px;
+}
+
+/*Technologies*/
+.title__technologies
+{
+    width: 100%;
+}
+.title__technologies--h2
+{
+    padding: 5px;
+    font-family: 'caviar_dreamsbold';
+}
+/*Technologies container*/
+.technologies__container
+{
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.line__porcent--background
+{
+    /* text-align: center; */
+    width: 200px;
+    height: 10px;
+    margin: 10px 5px;
+    background-color: #d8d8d8;
+}
+.porcent__relleno--HTML
+{
+    width: 80px;
+    height: 10px;
+    background-color: #2b2b28;
+}
+.porcent__relleno--CSS
+{
+    width: 100px;
+    height: 10px;
+    background-color: #2b2b28;
+}
+.porcent__relleno--JS
+{
+    width: 40px;
+    height: 10px;
+    background-color: #2b2b28;
+}
+
+/*footer*/
+.footer
+{
+    background-color: #2b2b28;
+    color: #fff;
+    font-family: 'caviar_dreamsregular';
+    text-align: center;
 }
