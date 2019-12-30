@@ -1,196 +1,115 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Daniel Santos</title>
-        <link rel="stylesheet" href="css/estilos_blog.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    </head>
-    <body class="bodyClass">
-        <i class="icon-menu burger-menu" id="burMenu"></i>
-        <header class="header">
-            <div class="wrapper">
-                    <div class="contact2">
-                    <a href="https://www.instagram.com/danielsantos7946/?hl=es-la"><img src="https://i.imgur.com/rgLufZ8.png" width="15" height="15"></a>
-                    <a href="https://twitter.com/Danielsantos495"><img src="https://i.imgur.com/r9U6IKI.png" width="15" height="15"></a>
-                    <a href="https://www.facebook.com/daniel.santos.7946"><img src="https://i.imgur.com/lyYb9Vs.png" width="15" height="15"></a>
-                    <a href="https://github.com/DanielSantos495"><img src="https://i.imgur.com/0XcTw7y.png" width="15" height="15"></a>
-                    </div>
-                    <div class="flexNav">
-                            <nav class="menu">
-                                <ul class="menUL">
-                                    <li class="portfolio">
-                                        <a class="linkPort" href="#portfolioId">Portafolio</a>
-                                    </li>
-                                    <li class="tecnologias">
-                                        <a class="linkTecno" href="#tecnologiasId">Tecnologías</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                    </div>
-                    <div class="contact3">
-                       <div class="contenedorContac">
-                        <a>Escríbeme</a>                     
-                       </div>
-                       <form class="contactEscri">
-                        <p>Nombre: <input type="text" name="nombre" placeholder="Nombre" size="15"/></p>
-                        <p>Correo: <input type="text" name="email" placeholder="Email" size="15"/></p>
-                        <input type="button" value="Enviar"/>
-                       </form>   
-                    </div>
+<head>
+    <meta charset="utf-8" />
+    <title>Daniel Santos</title>
+    <link rel="stylesheet" href="css/estilos_blog.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="inicio">
+        <div class="wrapper">
+            <div class="menu__container">
+                <nav class="menu__nav">
+                    <i class="icon-menu burger-menu"></i>
+                    <ul class="menu__ul">
+                        <li class="menu__inicio">
+                            <a href="#inicio">Inicio</a>
+                        </li>
+                        <li class="menu__portfolio">
+                            <a href="#portfolio--id">Portafolio</a>
+                        </li>
+                        <li class="menu__tecnologias">
+                            <a href="#technologies--id">Tecnologías</a>
+                        </li>
+                        <li class="menu__escribeme">
+                            <p class="menu__escribeme--a-e">Escríbeme</p> 
+                            <form class="escribeme__form">
+                                <label ><p>Nombre: <input type="text" name="nombre" placeholder="Nombre" size="15"/></p></label>
+                                <label><p>Correo: <input type="text" name="email" placeholder="Email"         size="15"/></p></label>
+                                <input type="button" value="Enviar"/>
+                            </form> 
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </header>
+        </div>
+    </header>
+    <main>
         <section class="hero">
-            <div class="wrapper">
-                <div class="writeHero">
-                    <h1 class="danielHero">Daniel <strong>Santos</strong></h1>
-                    <p class="p1Hero">Aprendiz de<br /> <strong class="paldesa">desarrollo</strong><br /><span class="palweb">web y</span><br /> <strong class="palsoft">software</strong>.</p>
-                    <p class="p2Hero">Amante a los <strong>viajes</strong>.</p>
-                </div>
-                <div class="imgHero">
-                    <figure class="figureHero">
-                        <img src="https://i.imgur.com/jlQvYjP.png" width="400" height="450" />
+            <div class="wrapper">               
+                    <figure class="container__image" >
+                        <img src="https://i.imgur.com/L403xYp.png" width="400" height="450" />
                     </figure>
+                <div class="hero__description">
+                    <h1 class="hero__name">Daniel <span>Santos</span></h1>
+                    <p class="hero__developer">Desarrolador web<p>
+                    <p class="hero__viajes">Fan de los viajes</p>
                 </div>
             </div> 
         </section>
+        <div class="social-network">
+            <a href="https://www.instagram.com/danielsantos7946/?hl=es-la"><img src="https://i.imgur.com/rgLufZ8.png" width="15" height="15"></a>
+            <a href="https://twitter.com/Danielsantos495"><img src="https://i.imgur.com/r9U6IKI.png" width="15" height="15"></a>
+            <a href="https://www.facebook.com/daniel.santos.7946"><img src="https://i.imgur.com/lyYb9Vs.png" width="15" height="15"></a>
+            <a href="https://github.com/DanielSantos495"><img src="https://i.imgur.com/0XcTw7y.png" width="15" height="15"></a>
+        </div>
             <div class="wrapper">
-                <div class="titlePort">
-                <h2 id="portfolioId"  class="namePortfolio">Portafolio</h2>
-                </div>
+                <span class="title__portfolio">
+                <h2 class="title__portfolio--h2" id="portfolio--id" >Portafolio</h2>
+                </span>
             </div>
-         <section class="sectionPort">
+         <section class="container__portfolio">
             <div class="wrapper">
-                <article  class="articlePortfolio">
-                    <figure class="containerFront">
-                        <img class="frontProject" src="https://i.imgur.com/K945W7z.jpg" width="450" height="300">
+                <article  class="portfolio__article">
+                    <figure class="portfolio__figure">
+                        <img class="" src="https://i.imgur.com/K945W7z.jpg" width="450" height="300">
                     </figure>
-                    <div class="projectContainer">
-                        <h3 class="nameProject">Nombre del proyecto</h3>
-                        <h6 class="projectCourse">React Native / React</h6>
-                        <p class="projectDate"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-                        <p class="projectUrl"><small><strong>Puedes verlo en:</strong>www.linkdelproyecto.com</small></p>
-                        <p class="projectDescription">
-                            Pequeña descripción del proyecto, que la gente pueda tener <br />
-                            tene una idea rapida. Lorem, ipsum dolor sit amet consectetur<br />
-                            adipisicing elit. Expedita voluptatem amet modi excepturi error,<br />
-                            est eos eligendi enim facere.
+                    <div class="container__description">
+                        <h3>Portafolio Personal</h3>
+                        <p ><small><strong>Fecha:</strong> De finalzado</small></p>
+                        <p><small><strong>Puedes verlo en:</strong> Este portafolio es el primer proyecto del mismo</small></p>
+                        <p>
+                            Este proyecto es este mismo portafolio, creado para exponer mis conocimientos en tecnologías, los proyectos realizados y la personalidad del programador.
                         </p>
                                         
                     </div>
                 </article>
-                <article  class="articlePortfolio">
-                    <figure class="containerFront">
-                        <img class="frontProject" src="https://i.imgur.com/K945W7z.jpg" width="450" height="300">
-                    </figure>
-                    <div class="projectContainer">
-                        <h3 class="nameProject">Nombre del proyecto</h3>
-                        <h6 class="projectCourse">React Native / React</h6>
-                        <p class="projectDate"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-                        <p class="projectUrl"><small><strong>Puedes verlo en:</strong>www.linkdelproyecto.com</small></p>
-                        <p class="projectDescription">
-                            Pequeña descripción del proyecto, que la gente pueda tener <br />
-                            tene una idea rapida. Lorem, ipsum dolor sit amet consectetur<br />
-                            adipisicing elit. Expedita voluptatem amet modi excepturi error,<br />
-                            est eos eligendi enim facere.
-                        </p>
-                                            
-                    </div>
-                </article>
-                <article  class="articlePortfolio">
-                    <figure class="containerFront">
-                        <img class="frontProject" src="https://i.imgur.com/K945W7z.jpg" width="450" height="300">
-                    </figure>
-                    <div class="projectContainer">
-                        <h3 class="nameProject">Nombre del proyecto</h3>
-                        <h6 class="projectCourse">React Native / React</h6>
-                        <p class="projectDate"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-                        <p class="projectUrl"><small><strong>Puedes verlo en:</strong>www.linkdelproyecto.com</small></p>
-                        <p class="projectDescription">
-                        Pequeña descripción del proyecto, que la gente pueda tener <br />
-                        tene una idea rapida. Lorem, ipsum dolor sit amet consectetur<br />
-                        adipisicing elit. Expedita voluptatem amet modi excepturi error,<br />
-                        est eos eligendi enim facere.
-                        </p>
-                                            
-                    </div>
-                </article>
-                <article  class="articlePortfolio">
-                    <figure class="containerFront">
-                        <img class="frontProject" src="https://i.imgur.com/K945W7z.jpg" width="450" height="300">
-                    </figure>
-                    <div class="projectContainer">
-                        <h3 class="nameProject">Nombre del proyecto</h3>
-                        <h6 class="projectCourse">React Native / React</h6>
-                        <p class="projectDate"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-                        <p class="projectUrl"><small><strong>Puedes verlo en:</strong>www.linkdelproyecto.com</small></p>
-                        <p class="projectDescription">
-                            Pequeña descripción del proyecto, que la gente pueda tener <br />
-                            tene una idea rapida. Lorem, ipsum dolor sit amet consectetur<br />
-                            adipisicing elit. Expedita voluptatem amet modi excepturi error,<br />
-                            est eos eligendi enim facere.
-                        </p>
-                                           
-                    </div>
-                </article>
+                
             </div>
         </section>
          <div class="wrapper">
-            <div class="titletecno">
-            <h2 class="nameTecno" id="tecnologiasId">Tecnologías</h2>
+            <span class="title__technologies">
+            <h2 class="title__technologies--h2" id="technologies-id">Tecnologías</h2>
+            </span>
         </div>
-        </div>
-         <section class="sectionTecno">
+         <section class="container__technologies">
             <div class="wrapper">
-                <article class="tecnologiasArticle">
-                    <figure class="imgTecnologias">
+                <article class="technologies__article">
+                    <figure class="technologies__figure">
                         <img src="https://i.imgur.com/aFqnbbd.png" width="110px" height="150">
-                    </figure>  
-                    <div class="descripcionContenedor">
-                        <div class="descripTecnologias" >
-                            <p class="nivelTecnologias"><strong>Nivel:</strong> Aprendiz.</p>
-                            <p class="experienciaTecnologias"><strong>Experiencia:</strong> Menos de un año.</p>
-                        </div>
-                    </div>
+                    </figure>
                 </article>
-                <article class="tecnologiasArticle">
-                    <figure class="imgTecnologias">
+                <article class="technologies__article">
+                    <figure class="technologies__figure">
                         <img src="https://i.imgur.com/J2pxgu6.png" width="110px" height="150">
-                    </figure>  
-                    <div class="descripcionContenedor">
-                        <div class="descripTecnologias">
-                            <p class="nivelTecnologias"><strong>Nivel:</strong> Aprendiz.</p>
-                            <p class="experienciaTecnologias"><strong>Experiencia:</strong> Menos de un año.</p>
-                        </div>
-                    </div>
+                    </figure> 
                 </article>
-                <article class="tecnologiasArticle">
-                    <figure class="imgTecnologias">
+                <article class="technologies__article">
+                    <figure class="technologies__figure">
                         <img src="https://i.imgur.com/GVuG6Aw.png" width="115px" height="150">
                     </figure>  
-                    <div class="descripcionContenedor">
-                        <div class="descripTecnologias">
-                            <p class="nivelTecnologias"><strong>Nivel:</strong> Aprendiz.</p>
-                            <p class="experienciaTecnologias"><strong>Experiencia:</strong> Menos de un año.</p>
-                        </div>
-                    </div>
                 </article>  
             </div>          
         </section>
-        <footer class="footer">                
-            <div class="wrapper">
-                <div>
-                    <p>Curso de desarrollo web online 2019<img src="https://i.imgur.com/cU7s8pl.png" width="80" alt="platzi"></p>
-                </div>
-                <div>
-                    <p>
-                    Designed <\3 by <a href="https://twitter.com/Danielsantos495">@Danielsantos495</a>
-                    </p>
-                </div>    
-            </div>           
-        </footer> 
-        <script src="js/portfolio.js">
-        </script>
-    </body>
+    </main>
+    <footer class="footer">                
+        <div class="wrapper">
+            <p>Daniel Esteban Santos Méndez - Developer</p>
+        </div>           
+    </footer> 
+    <script src="js/portfolio.js">
+    </script>
+</body>
 </html>
