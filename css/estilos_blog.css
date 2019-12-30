@@ -64,7 +64,14 @@
   .icon-menu:before {
     content: "\e900";
   }
-
+/*Wrapper*/
+.wrapper
+{
+    width: inherit;
+    height: inherit;
+    display: inherit;
+    justify-content: initial;
+}
 
 *
 {
@@ -77,6 +84,7 @@ header
     background-color: #f1d6ab;
     width: 100%;
     height: 25px;
+    padding: 5px;
 }
 .menu__container
 {
@@ -174,13 +182,112 @@ header
     background-color: #f1d6ab;
     width: 100vw;
     height: 100vh;
+    padding: 5px;
 }
-.container__image
+.hero__container--image
 {
     text-align: center;
 }
-.container__image img
+.hero__container--image img
 {
     width: 60vw;
-    height: 70vh;
+    height: 65vh;
+}
+.hero__description
+{
+    color: #fff;
+    font-family: 'caviar_dreamsregular';
+}
+.hero__description h1
+{
+    font-size: 40px;
+    font-weight: normal;
+    position: absolute;
+    top: 340px;
+}
+.hero__description h1 span
+{
+    position: absolute;
+    top: 32px;
+    left: 30px;
+}
+.hero__description h1 + p
+{
+    margin-top: 60px;
+    font-size: 25px;
+}
+.hero__description p + p
+{
+    margin-top: 40px;
+}
+
+/*social network menu*/
+.social-network
+{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    width: 25px;
+    background-color: #f1d6ab;   
+}
+
+/*Portafolio*/
+.title__portfolio
+{
+    width: 100%;
+}
+.title__portfolio--h2
+{
+    padding: 5px;
+    font-family: 'caviar_dreamsbold';
+}
+/*Portafolio container*/
+.container__portfolio
+{
+    width: 100%;
+    height: auto;
+}
+.portfolio__article
+{
+    width: 90%;
+    height: 420px;
+    margin: 2%;
+    padding: 10px;
+    justify-content: center;
+    border: 1px solid #2b2b28;
+    background-color: #2b2b28;
+    display: grid;
+    grid-template: 50px 150px 220px / repeat(6, 50px);
+    grid-template-areas:"img img img img img img"
+                        "img img img img img img"
+                        "descr1 descr1 descr1 descr1 descr1 descr1"
+              
+    ;
+}
+.portfolio__figure
+{
+    grid-area: img;
+}
+.portfolio__figure img
+{
+    vertical-align: top; /*quitar un margen pequeño que tiene todas las imagenes abajo*/
+}
+.container__description
+{   
+    display: grid;
+    grid-area: descr1;
+    font-family: 'raleway';                                                                                                                                  
+    color: #fff;
+    padding: 10px 20px 20px 20px;
+}
+.description__portfolio-date,
+.description__portfolio-view
+{
+    font-size: 12px;
+}
+.description__portfolio-descri
+{
+    font-size: 14px;
 }
