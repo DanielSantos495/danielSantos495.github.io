@@ -348,3 +348,34 @@ header
     font-family: 'caviar_dreamsregular';
     text-align: center;
 }
+
+/*MediaQueries*/
+@media screen and (min-width: 768px)
+{   
+    /*Header*/
+    .menu__container
+    {
+        width: 100%;
+    }
+    .menu__nav ul
+    {
+        display: flex;
+        justify-content: space-around;
+        max-width: none;
+    }
+    .menu__nav:hover ul, ul:hover
+    {
+        display: none;
+        position: fixed;
+        top: 24px;
+        /* background-color: #f1d6ab; */
+    }
+    .burger-menu
+    {
+        display: none;
+    }
+    .menu__nav ul li
+    {
+        justify-content: space-between;
+    }
+}
