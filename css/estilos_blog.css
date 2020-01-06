@@ -67,7 +67,7 @@
 /*Wrapper*/
 .wrapper
 {
-    width: inherit;
+    max-width: 100vw;
     height: inherit;
     display: inherit;
     justify-content: initial;
@@ -87,25 +87,34 @@ header
 }
 .menu__container
 {
-    width: 100px;
+    width: 100vw;
 }
-.menu__nav ul
+.menu__nav
 {   
-    display: none;
     background-color: #f1d6ab;
-    justify-content: start;
-    padding: 5px;
-    max-width: 100px;
-}
-.menu__nav:hover ul, ul:hover
-{
-    display: block;
+    width: 100vw;
+    text-align: center;
+    line-height: 5;
     position: fixed;
-    top: 24px;
-    background-color: #f1d6ab;
+    z-index: 2;
+    /* left: 0; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -350px;
 }
-.burger-menu
+.menu__nav.is-active 
 {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.burger-botton
+{
+    z-index: 3;
+    width: 30px;
+    height: 30px;
     color: #f8f8f8;
     font-size: 25px;
     position: fixed;
@@ -133,40 +142,43 @@ header
 {
     position: relative;
     cursor: pointer;
+    font-size: 17px;
 }
 .escribeme__form
 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    position: fixed;
     left: 0;
+    right: 0;
     background-color: #f1d6ab;
-    width: 100vh;
-    height: 100vh;
     /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    line-height: initial;
     display: none;
 }
 .escribeme__form p
 {
     padding: 5px;
-    font-size: 20px;
+    font-size: 14px;
 }
 .escribeme__form p input
 {
     height: 20px;
-    width: 300px;
+    width: 200px;
     border: none;
     outline: none;
+}
+.escribeme__form p input::placeholder
+{
+    padding-left: 5px;
 }
 .escribeme__form label + input
 {
     color: #f8f8f8;
     border: none;
     outline: none;
+    margin-top: 5px;
     height: 30px;
     width: 100px;
     background-color: #e3b04b;
@@ -201,24 +213,22 @@ header
 {
     font-size: 40px;
     font-weight: normal;
-    position: absolute;
-    top: 340px;
+    margin-top: -60px;
+    z-index: 1;
 }
 .hero__description h1 span
 {
-    position: absolute;
-    top: 32px;
-    left: 30px;
+    margin-left: 30px;
 }
 .hero__description h1 + p
 {
-    margin-top: 60px;
+    margin-top: 40px;
     font-size: 25px;
 }
 .hero__description p + p
 {
-    font-size: 20px;
-    margin-top: 40px;
+    font-size: 18px;
+    margin-top: 30px;
 }
 
 /*social network menu*/
@@ -227,6 +237,7 @@ header
     display: flex;
     flex-direction: column;
     position: fixed;
+    z-index: 3;
     right: 0;
     top: 50px;
     width: 25px;
@@ -350,32 +361,103 @@ header
 }
 
 /*MediaQueries*/
+
+/*MediaQueries para detallitos*/
+@media screen and (min-width: 480px)
+{
+    .menu__nav
+    {
+        left: -500px;
+    }
+}
+@media screen and (min-width: 540px)
+{
+    .menu__nav
+    {
+        left: -700px;
+    }
+}
+@media screen and (min-width: 700px)
+{
+    .menu__nav
+    {
+        left: -700px;
+    }
+}
+/*MediaQueries para detallitos final*/
+
 @media screen and (min-width: 768px)
 {   
     /*Header*/
+    .burger-botton
+    {
+        display: none;
+    }
     .menu__container
     {
         width: 100%;
+    }
+    .menu__nav
+    {   
+        height: 21px;
+        /* display: flex; */
+        line-height: initial;
+        text-align: initial;
+        left: 0;
+        width: 100vw;
     }
     .menu__nav ul
     {
         display: flex;
         justify-content: space-around;
-        max-width: none;
+        align-items: center;
+        padding: 0;
     }
-    .menu__nav:hover ul, ul:hover
+    .menu__ul li
     {
-        display: none;
-        position: fixed;
-        top: 24px;
-        /* background-color: #f1d6ab; */
+        padding: 0;
     }
-    .burger-menu
+    .menu__ul li a
     {
-        display: none;
+        font-size: 15px;
     }
-    .menu__nav ul li
+    .menu__escribeme--a-e
     {
-        justify-content: space-between;
+        font-size: 15px;
+    }
+    /*Hero*/
+    .hero
+    {
+        padding-top: 30px;
+    }
+    .hero__container--image img
+    {
+        width: 50vw;
+        height: 70vh
+    }
+    .hero__description h1
+    {
+        font-size: 90px;
+        margin-top: -150px;
+
+    }
+    .hero__description h1 span
+    {
+        margin-left: 65px;
+    }
+    .hero__description h1 + p
+    {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+    .hero__description p + p
+    {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+    /*Social-network*/
+    .social-network
+    {
+        top: 150px;
     }
 }
