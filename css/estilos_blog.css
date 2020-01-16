@@ -71,6 +71,7 @@
     height: inherit;
     display: inherit;
     justify-content: initial;
+    grid-template-columns: inherit;
 }
 
 *
@@ -459,5 +460,32 @@ header
     .social-network
     {
         top: 150px;
+    }
+}
+@media screen and (min-width: 1024px)
+{
+    .menu__nav
+    {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-areas: "menu . ";
+        grid-area: menu;
+    }
+    .hero
+    {
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-areas: " . image";
+    }
+    .hero__container--image
+    {
+        grid-area: image;
+        /* grid-template-areas: " . image"; */
+    }
+    .hero__container--image img
+    {
+        width: 40vw;
+        height: 80vh
     }
 }
