@@ -1,46 +1,39 @@
-const menu = document.querySelector(".menu");
-const contact = document.querySelector(".contenedorContac");
+const menu = document.getElementById('menu__nav');
+const burguerMenu = document.getElementById("burguer-menu");
 
-const burMenu = document.querySelector("#burMenu");
-burMenu.addEventListener("click", showHide);
+menu.addEventListener('click', showHideMenu);
+burguerMenu.addEventListener('click', showHideMenu);
 
-const linkPort = document.querySelector(".linkPort");
-const linkTecno = document.querySelector(".linkTecno");
+const escribeme = document.getElementById('escribeme');
+const escribemeForm = document.getElementById('escribemeForm');
 
-linkPort.addEventListener("click", showHide);
-linkTecno.addEventListener("click", showHide);
+escribeme.addEventListener('click', showHideEscribeme);
 
-
-function showHide()
+function showHideMenu()
 {
+    if(menu.classList.contains('menu'))
+    {
+        menu.classList.remove('menu');
+    }
+    else
+    {
+        menu.classList.add('menu');
+    }
     
-    if(menu.classList.contains("menuDesplegable") && contact.classList.contains("menuDesplegable"))
-    {
-        menu.classList.remove("menuDesplegable");
-        contact.classList.remove("menuDesplegable");
-    }
-    else
-    {
-        menu.classList.add("menuDesplegable");
-        contact.classList.add("menuDesplegable");
-    }
 }
 
-const contactEscri = document.querySelector(".contactEscri");
-const escri = document.querySelector(".contenedorContac");
-escri.addEventListener("click", showEscri);
-
-function showEscri()
+function showHideEscribeme()
 {
-    if(contactEscri.classList.contains("contactEscri2"))
+    if(escribemeForm.classList.contains('escribeme'))
     {
-        contactEscri.classList.remove("contactEscri2");
+        escribemeForm.classList.remove('escribeme');
     }
     else
     {
-        contactEscri.classList.add("contactEscri2");
+        escribemeForm.classList.add('escribeme');
     }
 }
+
 
 
 

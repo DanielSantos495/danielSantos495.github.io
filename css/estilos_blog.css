@@ -105,7 +105,7 @@ header
     bottom: 0;
     left: -350px;
 }
-.menu__nav.is-active 
+.menu__nav.menu 
 {
     left: 0;
     top: 0;
@@ -158,6 +158,10 @@ header
     align-items: center;
     line-height: initial;
     display: none;
+}
+.escribeme__form.escribeme
+{
+    display: flex;
 }
 .escribeme__form p
 {
@@ -618,8 +622,12 @@ header
     {
         display: block;
         grid-area: carrousel;
-        width: 100%;
-        padding: 25px;
+        width: 95%;
+        padding: 20px;
+    }
+    .portafolio__carrousel--container
+    {
+        /* background-color: #d8a848; */
     }
     .portfolio__carrousel--item
     {
@@ -630,6 +638,7 @@ header
         cursor: pointer;
         transition: 450ms all;
         transform-origin: center left;
+
     }
     .portfolio__carrousel--item:hover ~ .portfolio__carrousel--item
     {
