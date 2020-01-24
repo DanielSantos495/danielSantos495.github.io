@@ -140,59 +140,7 @@ header
     color: #f8f8f8;
     font-family: 'caviar_dreamsbold';
 }
-.menu__escribeme--a-e
-{
-    position: relative;
-    cursor: pointer;
-    font-size: 17px;
-}
-.escribeme__form
-{
-    position: fixed;
-    left: 0;
-    right: 0;
-    background-color: #f1d6ab;
-    /* display: flex; */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: initial;
-    display: none;
-}
-.escribeme__form.escribeme
-{
-    display: flex;
-}
-.escribeme__form p
-{
-    padding: 5px;
-    font-size: 14px;
-}
-.escribeme__form p input
-{
-    height: 20px;
-    width: 200px;
-    border: none;
-    outline: none;
-}
-.escribeme__form p input::placeholder
-{
-    padding-left: 5px;
-}
-.escribeme__form label + input
-{
-    color: #f8f8f8;
-    border: none;
-    outline: none;
-    margin-top: 5px;
-    height: 30px;
-    width: 100px;
-    background-color: #e3b04b;
-}
-.escribeme__form label + input:hover
-{
-    background-color: #d8a848;
-}
+
 
 /*Hero*/
 .hero

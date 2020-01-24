@@ -4,10 +4,9 @@ const burguerMenu = document.getElementById("burguer-menu");
 menu.addEventListener('click', showHideMenu);
 burguerMenu.addEventListener('click', showHideMenu);
 
-const escribeme = document.getElementById('escribeme');
-const escribemeForm = document.getElementById('escribemeForm');
 
-escribeme.addEventListener('click', showHideEscribeme);
+
+
 
 function showHideMenu()
 {
@@ -20,18 +19,6 @@ function showHideMenu()
         menu.classList.add('menu');
     }
     
-}
-
-function showHideEscribeme()
-{
-    if(escribemeForm.classList.contains('escribeme'))
-    {
-        escribemeForm.classList.remove('escribeme');
-    }
-    else
-    {
-        escribemeForm.classList.add('escribeme');
-    }
 }
 
 
