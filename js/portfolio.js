@@ -5,9 +5,6 @@ menu.addEventListener('click', showHideMenu);
 burguerMenu.addEventListener('click', showHideMenu);
 
 
-
-
-
 function showHideMenu()
 {
     if(menu.classList.contains('menu'))
@@ -21,6 +18,21 @@ function showHideMenu()
     
 }
 
+const imgCarouUno = document.getElementById('imgCarouUno');
+// const imgPort = document.getElementById('imgPort');
+
+imgCarouUno.addEventListener('mouseover',  showImgPortfolio);
+imgCarouUno.addEventListener('mouseout', hideImgPortfolio);
+
+function showImgPortfolio()
+{
+    document.getElementById('imgPort').src = 'https://i.imgur.com/WY3yEhY.png';
+}
+
+function hideImgPortfolio()
+{
+    
+}
 
 
 
