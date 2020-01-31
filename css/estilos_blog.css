@@ -103,7 +103,7 @@ header
     top: 0;
     right: 0;
     bottom: 0;
-    left: -350px;
+    left: -350%;
 }
 .menu__nav.menu 
 {
@@ -319,30 +319,6 @@ header
 }
 
 /*MediaQueries*/
-
-/*MediaQueries para detallitos*/
-@media screen and (min-width: 480px)
-{
-    .menu__nav
-    {
-        left: -500px;
-    }
-}
-@media screen and (min-width: 540px)
-{
-    .menu__nav
-    {
-        left: -700px;
-    }
-}
-@media screen and (min-width: 700px)
-{
-    .menu__nav
-    {
-        left: -700px;
-    }
-}
-/*MediaQueries para detallitos final*/
 
 @media screen and (min-width: 768px)
 {   
