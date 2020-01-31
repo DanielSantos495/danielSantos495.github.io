@@ -584,7 +584,7 @@ header
         display: inline-block;
         width: 150px;
         height: 150px;
-        margin-right: 10px;
+        /* margin-right: 10px; */
         cursor: pointer;
         transition: 450ms all;
         transform-origin: center left;
