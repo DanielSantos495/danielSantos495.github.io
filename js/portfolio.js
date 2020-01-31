@@ -27,13 +27,13 @@ function showHideMenu()
 const imgCarouUno = document.getElementById('imgCarouUno');
 const imgCarouDos = document.getElementById('imgCarouDos');
 const imgCarouTres = document.getElementById('imgCarouTres');
-const imgCarouCuatro = document.getElementById('imgCarouCuatro');
+
 
 
 imgCarouUno.addEventListener('mouseover',  showImgPortfolioUno);
 imgCarouDos.addEventListener('mouseover',  showImgPortfolioDos);
 imgCarouTres.addEventListener('mouseover',  showImgPortfolioTres);
-imgCarouCuatro.addEventListener('mouseover',  showImgPortfolioCuatro);
+
 
 
 function showImgPortfolioUno()
@@ -51,10 +51,6 @@ function showImgPortfolioTres()
     document.getElementById('imgPort').src = 'https://i.imgur.com/w9Cfw9E.png';
 }
 
-function showImgPortfolioCuatro()
-{
-    document.getElementById('imgPort').src = 'https://i.imgur.com/LvrAfYj.png';
-}
 
 const carouselContainer = document.getElementById('carouselContainer');
 carouselContainer.addEventListener('mouseout', showPhotoPrincipal);
