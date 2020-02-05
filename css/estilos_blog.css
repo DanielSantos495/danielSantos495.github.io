@@ -548,7 +548,7 @@ header
     {
         display: block;
         grid-area: carrousel;
-        width: 95%;
+        width: 38%;
         padding: 20px;
     }
     .portafolio__carrousel--container

@@ -26,30 +26,27 @@ function showHideMenu()
 
 const imgCarouUno = document.getElementById('imgCarouUno');
 const imgCarouDos = document.getElementById('imgCarouDos');
-const imgCarouTres = document.getElementById('imgCarouTres');
+
 
 
 
 imgCarouUno.addEventListener('mouseover',  showImgPortfolioUno);
 imgCarouDos.addEventListener('mouseover',  showImgPortfolioDos);
-imgCarouTres.addEventListener('mouseover',  showImgPortfolioTres);
+
 
 
 
 function showImgPortfolioUno()
 {
-    document.getElementById('imgPort').src = 'https://i.imgur.com/WY3yEhY.png';
+    document.getElementById('imgPort').src = 'https://i.imgur.com/4DIs8Xl.png';
 }
 
 function showImgPortfolioDos()
 {
-    document.getElementById('imgPort').src = 'https://i.imgur.com/cIrrPKp.png';
+    document.getElementById('imgPort').src = 'https://i.imgur.com/viSMh0m.jpg';
 }
 
-function showImgPortfolioTres()
-{
-    document.getElementById('imgPort').src = 'https://i.imgur.com/w9Cfw9E.png';
-}
+
 
 
 const carouselContainer = document.getElementById('carouselContainer');
@@ -57,7 +54,7 @@ carouselContainer.addEventListener('mouseout', showPhotoPrincipal);
 
 function showPhotoPrincipal()
 {
-    document.getElementById('imgPort').src = 'https://i.imgur.com/K945W7z.jpg';
+    document.getElementById('imgPort').src = 'https://i.imgur.com/w7yjr7b.png';
 }
 
 
