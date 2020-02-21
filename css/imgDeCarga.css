@@ -1,0 +1,211 @@
+@media screen and (min-width: 1024px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+        
+    .viewport {
+        /* width: 100%; */
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        display: grid;
+        grid-template-columns: repeat(6, 227.5px);
+        grid-template-rows: repeat(7, 91px);
+        grid-template-areas: 'siete siete cinco uno nueve nueve'
+                             'siete siete cinco uno nueve nueve'
+                             'dos dos cinco uno diez diez'
+                             'dos dos cinco uno diez diez'
+                             'once once cinco uno cuatro cuatro'
+                             'ocho ocho tres seis seis seis'   
+                             'ocho ocho tres seis seis seis';
+    }
+    
+    .pieza-uno {
+        grid-area: uno;
+        /* animation-name: pieza-uno; */
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes pieza-uno {
+        from {
+            margin-top: 0;
+        }
+        to {
+            margin-top: -500px;
+        }
+    }
+    
+    .pieza-dos {
+        grid-area: dos;
+        /* animation-name: pieza-dos; */
+        animation-duration: 1.6s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes pieza-dos {
+        from {
+            margin-left: 0;
+        } 
+        to {
+            margin-left: -700px;
+        }
+    }
+    
+    .pieza-tres {
+        grid-area: tres;
+        /* animation-name: pieza-tres; */
+        animation-duration: 2.8s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes pieza-tres {
+        from {
+            margin-top: 0;
+        } 
+        to {
+            margin-top: 700px; /* se pone valor positivo para que empuja el margin de arrona y la pieza salga por abajo*/
+        }
+    }
+    
+    
+    .pieza-cuatro {
+        grid-area: cuatro;
+        /* animation-name: pieza-cuatro; */
+        animation-duration: 2.7s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes pieza-cuatro {
+        from {
+            margin-left: 0;
+        } 
+        to {
+            margin-left: 700px; /*se pone margiton-left y valor positivo para que salga del viewport por la derecha*/
+        }
+    } 
+    
+    .pieza-cinco {
+        grid-area: cinco;
+        /* animation-name: pieza-cinco; */
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes pieza-cinco {
+        from {
+            margin-top: 0;
+        } 
+        to {
+            margin-top: -700px;   
+        }
+    } 
+    
+    
+    .pieza-seis {
+        grid-area: seis;
+        /* animation-name: pieza-seis; */
+        animation-duration: 1.8s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes pieza-seis {
+        from {
+            margin-left: 0;
+        } 
+        to {
+            margin-left: 700px; /*se pone margiton-left y valor positivo para que salga del viewport por la derecha*/
+        }
+    }
+    
+    .pieza-siete {
+        grid-area: siete;
+        /* animation-name: pieza-siete; */
+        animation-duration: .8s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes pieza-siete {
+        from {
+            margin-left: 0;
+        } 
+        to {
+            margin-left: -700px;
+        }
+    }
+    
+    
+    .pieza-ocho {
+        grid-area: ocho;
+        /* animation-name: pieza-ocho; */
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes pieza-ocho {
+        from {
+            margin-left: 0;
+        } 
+        to {
+            margin-left: -700px;
+        }
+    }
+    
+    
+    .pieza-nueve {
+        grid-area: nueve;
+        /* animation-name: pieza-nueve; */
+        animation-duration: 2.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes pieza-nueve {
+        from {
+            margin-left: 0;
+        } 
+        to {
+            margin-left: 700px; /*se pone margiton-left y valor positivo para que salga del viewport por la derecha*/
+        }
+    }
+    
+    .pieza-diez {
+        grid-area: diez;
+        /* animation-name: pieza-diez; */
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes pieza-diez {
+        from {
+            margin-left: 0;
+        } 
+        to {
+            margin-left: 700px; /*se pone margiton-left y valor positivo para que salga del viewport por la derecha*/
+        }
+    }
+    
+    
+    .pieza-once {
+        grid-area: once;
+        /* animation-name: pieza-once; */
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes pieza-once {
+        from {
+            margin-left: 0;
+        } 
+        to {
+            margin-left: -700px; 
+        }
+    }
+    
+    img {
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    
+}
