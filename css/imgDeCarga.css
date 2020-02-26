@@ -1,17 +1,17 @@
 @media screen and (min-width: 1024px) {
-    * {
+    /* * {
         margin: 0;
         padding: 0;
-    }
+    } */
         
     .viewport {
-        /* width: 100%; */
         margin: 0;
         padding: 0;
         position: fixed;
+        z-index: 4;
         display: grid;
         grid-template-columns: repeat(6, 227.5px);
-        grid-template-rows: repeat(7, 91px);
+        grid-template-rows: repeat(7, 92px);
         grid-template-areas: 'siete siete cinco uno nueve nueve'
                              'siete siete cinco uno nueve nueve'
                              'dos dos cinco uno diez diez'
@@ -23,7 +23,8 @@
     
     .pieza-uno {
         grid-area: uno;
-        /* animation-name: pieza-uno; */
+        animation-name: pieza-uno;
+        animation-delay: 1s;
         animation-duration: 3s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -39,7 +40,8 @@
     
     .pieza-dos {
         grid-area: dos;
-        /* animation-name: pieza-dos; */
+        animation-name: pieza-dos;
+        animation-delay: 1s;
         animation-duration: 1.6s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -55,7 +57,8 @@
     
     .pieza-tres {
         grid-area: tres;
-        /* animation-name: pieza-tres; */
+        animation-name: pieza-tres;
+        animation-delay: 1s;
         animation-duration: 2.8s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -72,7 +75,8 @@
     
     .pieza-cuatro {
         grid-area: cuatro;
-        /* animation-name: pieza-cuatro; */
+        animation-name: pieza-cuatro;
+        animation-delay: 1s;
         animation-duration: 2.7s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -88,7 +92,8 @@
     
     .pieza-cinco {
         grid-area: cinco;
-        /* animation-name: pieza-cinco; */
+        animation-name: pieza-cinco;
+        animation-delay: 1s;
         animation-duration: 3s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -105,7 +110,8 @@
     
     .pieza-seis {
         grid-area: seis;
-        /* animation-name: pieza-seis; */
+        animation-name: pieza-seis;
+        animation-delay: 1s;
         animation-duration: 1.8s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -121,7 +127,8 @@
     
     .pieza-siete {
         grid-area: siete;
-        /* animation-name: pieza-siete; */
+        animation-name: pieza-siete;
+        animation-delay: 1s;
         animation-duration: .8s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -138,7 +145,8 @@
     
     .pieza-ocho {
         grid-area: ocho;
-        /* animation-name: pieza-ocho; */
+        animation-name: pieza-ocho;
+        animation-delay: 1s;
         animation-duration: 4s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -155,7 +163,8 @@
     
     .pieza-nueve {
         grid-area: nueve;
-        /* animation-name: pieza-nueve; */
+        animation-name: pieza-nueve;
+        animation-delay: 1s;
         animation-duration: 2.3s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -171,7 +180,8 @@
     
     .pieza-diez {
         grid-area: diez;
-        /* animation-name: pieza-diez; */
+        animation-name: pieza-diez;
+        animation-delay: 1s;
         animation-duration: 1s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -188,7 +198,8 @@
     
     .pieza-once {
         grid-area: once;
-        /* animation-name: pieza-once; */
+        animation-name: pieza-once;
+        animation-delay: 1s;
         animation-duration: 1.5s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -202,7 +213,7 @@
         }
     }
     
-    img {
+    .viewport img {
         margin: 0;
         padding: 0;
         display: block;
