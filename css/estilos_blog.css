@@ -75,15 +75,33 @@
     flex-direction: inherit;
 }
 
+/*VARIBLES-------------------------------VARIBLES--------------------------------------VARIBLES*/
+:root {
+    /*PALETA DE COLORES*/
+    --color-amarriloQuemado: #ffc93c;
+    --color-grisOscuro: #2b2b28;
+    --color-grisClarito: #f8f8f8;
+
+    /*FONS*/
+
+    --font-menu: 18px;
+}
+
+
+/*VARIBLES-------------------------------VARIBLES--------------------------------------VARIBLES*/
+
+
 *
 {
    margin: 0;
 }
-
+body {
+    max-width: 100vw;
+}
 /*--Header-------------------------------------------------------Header*/
 header
 {
-    background-color: #f1d6ab;
+    background-color: var(--color-amarriloQuemado);
     max-width: 100vw;
     height: 25px;
 }
@@ -93,13 +111,12 @@ header
 }
 .menu__nav
 {   
-    background-color: #f1d6ab;
+    background-color: var(--color-amarriloQuemado);
     width: 100vw;
     text-align: center;
     line-height: 5;
     position: fixed;
     z-index: 2;
-    /* left: 0; */
     top: 0;
     right: 0;
     bottom: 0;
@@ -115,13 +132,15 @@ header
 .burger-botton
 {
     z-index: 3;
-    width: 30px;
-    height: 30px;
-    color: #f8f8f8;
+    color: var(--color-grisOscuro);
     font-size: 25px;
     position: fixed;
-    background-color: rgba(241, 214, 168, .5);
+    background-color: var(--color-amarriloQuemado);
 
+}
+.menu__ul {
+    margin-top: 30%;
+    margin-left: -50px;
 }
 .menu__ul li
 {
@@ -131,20 +150,14 @@ header
 .menu__ul li a
 {
     text-decoration: none;
-    color: #f8f8f8;
+    color: var(--color-grisOscuro);
     font-family: 'caviar_dreamsbold';
-    font-size: 17px;
+    font-size: var(--font-menu);
 }
-.menu__ul li p
-{
-    color: #f8f8f8;
-    font-family: 'caviar_dreamsbold';
-}
-
 /*--Hero---------------------------------------------------------------------Hero*/
 .hero
 {
-    background-color: #f1d6ab;
+    background-color: var(--color-amarriloQuemado);
     width: 100%;
     height: 100vh;
     max-width: 100vw;
@@ -155,19 +168,20 @@ header
 }
 .hero__container--image img
 {
-    width: 60vw;
+    width: 190px;
     height: 65vh;
 }
 .hero__description
 {
-    color: #fff;
+    color: var(--color-grisOscuro);
     font-family: 'caviar_dreamsregular';
+    padding-left: 6%;
 }
 .hero__description h1
 {
     font-size: 40px;
     font-weight: normal;
-    margin-top: -60px;
+    margin-top: -8%;
     z-index: 1;
 }
 .hero__description h1 span
@@ -181,22 +195,24 @@ header
 }
 .hero__description p + p
 {
-    font-size: 18px;
+    font-size: var(--font-menu);
     margin-top: 30px;
+    font-weight: 700;
 }
 
 /*--social network menu-------------------------------------------social network menu*/
 .social-network
 {
     display: flex;
-    padding-top: 7px;
+    
+    padding: 7px 2px 0;
     flex-direction: column;
     position: fixed;
     z-index: 3;
     right: 0;
     top: 50px;
     width: 25px;
-    background-color: #f1d6ab;   
+    background-color: var(--color-amarriloQuemado);   
 }
 
 .social-network a img:hover
@@ -205,32 +221,26 @@ header
 }
 
 /*--Portafolio-----------------------------------------------------Portafolio*/
-.title__portfolio
-{
-    width: 100%;
-}
-.title__portfolio--h2
-{
-    padding: 5px;
-    font-family: 'caviar_dreamsbold';
-}
-/*--Portafolio container---------------------------------------------Portafolio container*/
+ 
+
 .container__portfolio
 {
     width: 100%;
+    margin-bottom: 50px;
     height: auto;
     display: grid;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .portfolio__article
 {
-    width: 90%;
+    /* width: 100%; */
     height: 420px;
-    margin: 5px;
-    padding: 10px;
+    padding-top: 20px; 
+    /* margin: 5px; */
+    /* padding: 10px; */
     justify-content: center;
-    border: 1px solid #2b2b28;
-    background-color: #2b2b28;
+    border: 1px solid var(--color-grisOscuro);
+    background-color: var(--color-grisOscuro);
     display: grid;
     grid-template: 50px 150px 220px / repeat(6, 50px);
     grid-template-areas:"img img img img img img"
@@ -252,7 +262,7 @@ header
     display: grid;
     grid-area: descr1;
     font-family: 'raleway';                                                                                                                                  
-    color: #fff;
+    color: var(--color-grisClarito);
     padding: 10px 20px 20px 20px;
 }
 .description__portfolio-date,
@@ -272,10 +282,11 @@ header
 .title__technologies
 {
     width: 100%;
+    margin-bottom: 50px;
 }
 .title__technologies--h2
 {
-    padding: 5px;
+    margin-left: 6%;
     font-family: 'caviar_dreamsbold';
 }
 /*--Technologies container-----------------------------------------------Technologies container*/
@@ -298,32 +309,95 @@ header
 {
     width: 80px;
     height: 10px;
-    background-color: #2b2b28;
+    background-color: var(--color-grisOscuro);
 }
 .porcent__relleno--CSS
 {
     width: 100px;
     height: 10px;
-    background-color: #2b2b28;
+    background-color: var(--color-grisOscuro);
 }
 .porcent__relleno--JS
 {
     width: 40px;
     height: 10px;
-    background-color: #2b2b28;
+    background-color: var(--color-grisOscuro);
 }
 
 /*--footer--------------------------------------------------------------------footer*/
 .footer
 {
-    background-color: #2b2b28;
-    color: #fff;
+    background-color: var(--color-grisOscuro);
+    color: var(--color-grisClarito);
     font-family: 'caviar_dreamsregular';
     text-align: center;
 }
 
 /*--MediaQueries----------------------------------------------------------------MediaQueries*/
+@media screen and (min-width: 450px) {
+    /*HERO*/
 
+    .hero__container--image img {
+        width: 230px;
+        height: 75vh;
+    }
+    .hero__description h1 {
+        margin-top: -20%;
+    }
+}
+@media screen and (min-width: 550px) {
+    /*HERO*/
+
+    .hero__container--image img {
+        width: 260px;
+        height: 80vh;
+    }
+    .hero__description h1 {
+        margin-top: -25%;
+        font-size: 50px;
+    }
+    .hero__description h1 + p {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    .hero__description p + p {
+        font-size: var(--font-menu);
+        margin-top: 20px;
+    }
+    .title__technologies--h2{
+    margin-left: 6%;
+    }
+}
+@media screen and (min-width: 700px) {
+    /*MENU*/
+    .menu__ul {
+        margin-top: 20%;
+    }
+
+    /*HERO*/
+
+    .hero__container--image img {
+        margin-left: 20%; 
+        width: 290px;
+        height: 95vh;
+    }
+    .hero__description h1 {
+        margin-top: -40%;
+        font-size: 55px;
+    }
+    .hero__description h1 + p {
+        margin-top: 30px;
+        font-size: 35px;
+    }
+    .hero__description p + p {
+        font-size: var(--font-menu);
+        margin-top: 20px;
+    }
+    .title__technologies--h2{
+        margin-left: 6%;
+        font-size: 30px;
+    }
+}
 @media screen and (min-width: 768px)
 {   
     /*--Header------------------------------------------------------------------Header*/
@@ -351,6 +425,10 @@ header
         align-items: center;
         padding: 0;
     }
+    .menu__ul {
+        margin-top: initial;
+        margin-left: initial;
+    }
     .menu__ul li
     {
         padding: 0;
@@ -363,34 +441,30 @@ header
     {
         font-size: 15px;
     }
+    
     /*--Hero-----------------------------------------------------------------------Hero*/
     .hero
     {
         padding-top: 30px;
     }
-    .hero__container--image img
-    {
-        width: 50vw;
-        height: 70vh
+    /*HERO*/
+
+    .hero__container--image img {
+        margin-left: 50%; 
+        width: 290px;
+        height: 95vh;
     }
-    .hero__description h1
-    {
-        font-size: 90px;
-        margin-top: -150px;
+    .hero__description h1 {
+        margin-top: -50%;
+        font-size: 70px;
     }
-    .hero__description h1 span
-    {
-        margin-left: 65px;
-    }
-    .hero__description h1 + p
-    {
-        font-size: 40px;
+    .hero__description h1 + p {
         margin-top: 50px;
+        font-size: 50px;
     }
-    .hero__description p + p
-    {
+    .hero__description p + p {
         font-size: 25px;
-        margin-top: 50px;
+        margin-top: 60px;
     }
 
 
@@ -429,13 +503,15 @@ header
     }
     .menu__ul
     {
+        margin-top: initial;
+        margin-left: initial;
         background-color: #fff;
         height: 60px;
     }
     .menu__ul li a 
     {
         color: #000;
-        font-size: 18px;
+        font-size: var(--font-menu);
     }
 
     /*HERO-----------------------HERO-------------------------------------------------------HERO*/
@@ -457,7 +533,8 @@ header
     }
     .hero__container--image img
     {
-        width: 40vw;
+        margin-left: initial;
+        width: 30vw;
         height: 80vh
     }
     .hero__description
@@ -508,25 +585,23 @@ header
 
     /*--Portfolio---------------------------------------------------------------------Portfolio*/
     
-    .title__portfolio
-    {
-        padding-top: 50px ;
-    }
     .container__portfolio
     {
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
     .portfolio__article
     {
+        /* width: 100%; */
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        justify-content: initial;
+        grid-template-columns: 40% repeat(2, 25%);
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas: "figure description description"
                              "figure description description"  
                              "figure carrousel carrousel" ;
-        margin: 2% 4%;
-        padding-left: 1px;
+        
         align-items: center;
         height: 500px;
     }
@@ -534,12 +609,13 @@ header
     {
         grid-area: figure;
         padding: 59px 5px;
+        margin-left: 10px;
         background-color: #fff;
     }
     .portfolio__figure img
     {
         height: 350px;
-        width: 400px;
+        width: 100%;
     }
     .container__description
     {
@@ -576,8 +652,6 @@ header
     .portfolio__carrousel--item
     {
         display: inline-block;
-        width: 150px;
-        height: 150px;
         cursor: pointer;
         transition: 450ms all;
         transform-origin: center left;
@@ -601,6 +675,10 @@ header
         object-fit: cover;
     }
     /*Tecnologies*/
+    .title__technologies--h2 {
+        /* margin-left: 6%; */
+        font-size: 35px;
+    }
     .technologies__container
     {
         display: flex;
