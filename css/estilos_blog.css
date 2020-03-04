@@ -49,7 +49,7 @@
   [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -223,7 +223,7 @@ header
     justify-content: center;
 }
 .portfolio__article
-{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
+{
     width: 90%;
     height: 420px;
     margin: 5px;
@@ -482,13 +482,12 @@ header
     {
         font-size: 40px;
         margin-top: 70px;
-        /* margin-left: 80px; */
     }
     .hero__description p + p
     {
         font-size: 20px;
         margin-top: 30px;
-        /* margin-left: 60px; */
+        font-weight: 700;
     }
 
 
@@ -605,11 +604,6 @@ header
     .technologies__container
     {
         display: flex;
-    }
-    .technologies__container article
-    {
-        /* width: 100%; */
-        /* margin: 2% 0; */
     }
     .technologies__article-css 
     {
