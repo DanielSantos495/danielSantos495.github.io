@@ -1,14 +1,32 @@
-const viewport = document.getElementById('viewport');
-viewport.addEventListener('animationend', eliminarEtiquetasHtml);
 
-function eliminarEtiquetasHtml() {
+
+const VIEWPORT = document.getElementById('viewport');
+VIEWPORT.addEventListener('animationend', eliminarEtiquetasHtml);
+   
+   function eliminarEtiquetasHtml() {
      
-    const unSegundos = 1000;
-     setTimeout(eliminarElementoViewport, unSegundos);
+      const UN_SEGUNDOS = 1000;
+      setTimeout(eliminarElementoViewport, UN_SEGUNDOS);
      function eliminarElementoViewport () {
-        const nodoPadre = viewport.parentNode;
+        const NODO_PADRE = VIEWPORT.parentNode;
         // console.log(nodoPadre);
         // debugger
-        nodoPadre.removeChild(viewport);
+        NODO_PADRE.removeChild(VIEWPORT);
      }
-}
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
