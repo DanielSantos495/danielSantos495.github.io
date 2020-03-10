@@ -191,13 +191,13 @@ header
 }
 .hero__description h1 + p
 {
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 25px;
 }
 .hero__description p + p
 {
     font-size: var(--font-menu);
-    margin-top: 30px;
+    margin-top: 20px;
     font-weight: 700;
 }
 
