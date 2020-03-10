@@ -38,13 +38,17 @@ imgCarouDos.addEventListener('mouseover',  showImgPortfolioDos);
 
 function showImgPortfolioUno()
 {
-    document.getElementById('imgPort').src = 'https://i.imgur.com/4DIs8Xl.png';
+    document.getElementById('imgPort').src = 'https://i.imgur.com/TdZLUeX.png';
+    imgPort.style.width = '400px';  
 }
 
 function showImgPortfolioDos()
 {
-    document.getElementById('imgPort').src = 'https://i.imgur.com/viSMh0m.jpg';
+    document.getElementById('imgPort').src = 'https://i.imgur.com/ePsgTV2.png';
+    imgPort.style.width = '200px';    
 }
+
+
 
 
 
@@ -54,7 +58,9 @@ carouselContainer.addEventListener('mouseout', showPhotoPrincipal);
 
 function showPhotoPrincipal()
 {
-    document.getElementById('imgPort').src = 'https://i.imgur.com/w7yjr7b.png';
+    document.getElementById('imgPort').src = 'https://i.imgur.com/wWPS9aU.png';
+    imgPort.style.width = '100%';
 }
+
 
 
